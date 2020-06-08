@@ -1,16 +1,17 @@
 <template>
     <div id="app">
-        <HelloWorld />
+        <!-- <login /> -->
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import login from "./components/login.vue";
 
 export default {
     name: "App",
     components: {
-        HelloWorld
+        // login
     }
 };
 </script>
@@ -107,5 +108,8 @@ textarea {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+input {
+    outline: none;
 }
 </style>
